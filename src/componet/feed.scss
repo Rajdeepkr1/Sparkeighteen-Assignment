@@ -1,0 +1,50 @@
+.feed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80vw;
+  padding: 2px;
+  .fas{
+      font-size: 25px;
+      text-align: center;
+      color: rgb(214, 252, 3);
+      cursor: pointer;
+  }
+  .event {
+    // flex: 2;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    margin-top: 10px;
+    color:rgb(252, 249, 248);
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
+  }
+  .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(252, 249, 248);
+    padding: 5px;
+    background-color: rgb(182, 202, 202);
+    cursor: pointer;
+      > img {
+        object-fit: contain;
+         width: 30vw;
+      }
+  }
+
+  .details {
+    // flex: 2;
+    background-color: var(--main-color);
+    color:rgb(252, 249, 248);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    font-family: 'Domine', serif;
+    cursor: pointer;
+  }
+}

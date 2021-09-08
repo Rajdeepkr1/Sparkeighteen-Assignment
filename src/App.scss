@@ -1,0 +1,45 @@
+:root{
+    --main-color: #305f2f;
+}
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .PaginationBttns{
+      margin-top: 20px;
+      width: 80%;
+      height: 40px;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+
+
+      a{
+          padding: 5px 10px;
+          text-align: center;
+          margin:8px;
+          border-radius: 2px;
+          border: 1px solid #305f2f ;
+          color: #305f2f ;
+          cursor: pointer;
+
+          :hover{
+            background-color: #305f2f;
+            color: aliceblue;
+        }
+      }
+      
+  }
+  .paginationActive{
+      a{
+        background-color: #305f2f;
+        color: aliceblue;
+      }
+  }
+
+}
+
+
+
