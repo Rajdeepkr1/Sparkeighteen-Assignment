@@ -14,13 +14,7 @@ function App() {
 
   const DataOfApi = async (e) => {
     try {
-      const res = await fetch(ApiData, {
-        method: "GET",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-      });
+      const res = await fetch(ApiData);
       const data = await res.json();
       setDataRes(data.posts);
     } catch (err) {
